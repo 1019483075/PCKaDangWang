@@ -1,0 +1,87 @@
+*{ margin: 0; padding: 0;}
+img{ cursor: pointer;}
+ul,ol{ list-style: none}
+a{text-decoration: none;}
+#bigBox{ position: fixed; width: 100%;height: 7200px; background: rgba(0,0,0,0.6); top: 0; left: 0; 
+display: none; z-index: 5;}
+
+
+em,b,i,strong{font-style: normal;}
+
+#chooseGift{ width: 870px; height: 450px; overflow: hidden; background: #FFFFFF; position: absolute; left: 10px;
+border: 1px solid #cccccc; display: none;}
+#chooseGift h2{  font: bold 20px/52px "宋体" ; color: black;}
+#chooseGift ul li{height: 86px}
+#chooseGift ul li p{ ;font: bold 14px "宋体";color:black; cursor: pointer; line-height: 20px;}
+#chooseGift span{ margin-right:2px; cursor: pointer; font: 11px/16px "宋体";}
+#CGleft,#CGright{  height: 450px; float: left; padding-left: 0px;}
+#CGleft{width: 300px; border-right: 1px solid #cccccc}
+#CGright{width: 550px; overflow: hidden;}
+#CGright ul{ width: 275px; float: left;}
+
+#container{ width: 1264px; height: auto; margin: 0 auto ; background: #FFFFFF;}
+
+#birthDayTop{ width: 1254px; margin-left: 10px;overflow: hidden;}
+ #birthDayTop .birthdaygift{ font: 40px "宋体"; margin-top: 4px; color: black;}
+.birthdaygift1{font: 18px/28px "宋体"; color: black;}
+#aaa,#sendWho,#budget,#kindOfGift{ float: left; margin-right: 180px; color: #666666; font: 14px/28px "宋体"; margin-top: 35px;
+text-align: center}
+#birthDayTop p{ font-size: 14px; word-spacing: 10px;}
+#birthDayTop h2{ font: bold 18px "微软雅黑"; color: black;}
+
+/* 固定导航条块*/
+ #hiddenNav{ width: 100%; height: 40px; margin: 0 auto; background: #f4604b; position: fixed; top: 0; display: none; z-index: 100;}
+ #hiddenNav .hiddenNav_li{ width: 120px;height:40px; border-left: 1px dotted white; float: left; margin-left: 120px;}
+ #hiddenNav .hiddenNav_li1{ margin-left: 25%;}
+ #hiddenNav .hiddenNav_li p{ width: 103px; height: 40px; font: 14px/40px "宋体"; color: #FFFFFF; padding-left: 15px;
+ position: relative;}
+ #hiddenNav .hiddenNav_li p img{ position:absolute; right: 20px; top:13px; z-index:101;}
+#hiddenNav .hiddenNav_li ul{  color: #666666;border: 1px solid #f4604b; border-top:none; background: #FFFFFF;
+padding-left: 15px; display: none;}
+#hiddenNav .hiddenNav_li ul li{font: 14px/24px "宋体";}
+
+/*图片轮播块 */
+#sendGift_ad{ width: 1254px; margin-left: 10px; overflow: hidden;}
+#sendGift_ad .mainPic{ width: 550px; height:400px ; position: relative; margin-top: 20px; float: left;}
+#sendGift_ad .mainPic img{position: absolute;left: 0; top: 0; }
+.leftBtn,.rightBtn{ position: absolute; top:50%;margin-top: -40px; font: bold 40px/80px "微软雅黑";
+color: white; background: #666666; text-align: center; height: 80px; width: 40px; opacity: 0.8; border-radius: 5px;
+display: none;}
+.leftBtn{ left: 20px;}
+.rightBtn{ right: 20px;}
+.mainPic .smallBtn{ height: 16px; width: 16px; border-radius: 50%; background: #666666; position: absolute;
+bottom: 15px;}
+.remai{ width: 370px; margin-left: 20px; float: left; margin-top: 20px;}
+.remai2{ margin-top: 20px;}
+.remai3{ float: left; margin-left: 20px; margin-top: 20px;}
+
+/*楼层信息*/
+
+#recommend,#firstFloor,#secondFloor,#thirdFloor,#fourthFloor{ width: 1254px; margin: 0 auto; min-height: 50px;
+padding-bottom: 25px; border-bottom: 1px solid #999999; overflow: hidden;}
+.clear{ overflow: hidden; margin-left: 5px; margin-top: 25px;}
+.clear .bigFont{ font: 22px/24px "宋体"; float: left; padding-right: 20px; border-right: 1px solid #999999;color: #424242;}
+.clear .smallFont{ font: 14px/30px "宋体"; float: left; color: #424242; padding-left: 10px;}
+.bottomInfo{ width: 100%; text-align: center; border-right: 1px solid #999999;}
+.bottomInfo span{ font: 16px/26px "宋体"; color: #666666; display: inline-block; padding-left: 12px;
+padding-right: 10px; border-right: 1px solid #666666;cursor: pointer;}
+
+.detailInfo{ overflow: hidden; margin-top: 20px;}
+.detailInfo li{ min-width: 280px; margin-right: 20px; height: 335px; float: left; position: relative;}
+.detailInfo li div{ width: 40px; height: 40px; font: 15px/40px "微软雅黑"; text-align: center; background: #f4604b;
+ position: absolute; left: 0; top: 280px; color: #FFFFFF;}
+.detailInfo li aside{  color: #666666;  font: normal 14px/20px "微软雅黑"; margin-left: 50px; width: 220px; white-space: nowrap;
+text-overflow: ellipsis; overflow: hidden;}
+.detailInfo li img{ width: 280px; height: 280px;}
+.detailInfo li span{ float: left; padding-left: 50px; font: 14px/22px "微软雅黑";}
+.detailInfo li em{ float: right; padding-right: 10px;line-height: 22px;}
+
+
+/* 底部*/
+#activity{width: 1254px; margin-left: 10px; overflow: hidden;}
+#activity h1{ font: bold 24px/60px "宋体"; width: 100%; margin: 0 auto; text-align: center;color: #f4604b;}
+#activity ul{ overflow: hidden;}
+#activity ul li{ float: left; margin-right: 20px; margin-bottom: 10px;}
+#activity table{ border-spacing: 10px; border: none ; margin-top: 20px ;}
+#activity table td{ height: 48px; width: 232px; border: 1px solid #cccccc; line-height: 48px; text-align: center;}
+#activity table a{ color: #333333; font-size: 20px;}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>为爱用心定制:创意个性礼品定制, 创意生日礼物, 创意礼物 - 卡当网</title>
+		<link href="../css/shopCar3.css" rel="stylesheet" type="text/css" />
+		<link href="../img/icon.bmp" rel="shortcut icon"/>
+		<script src="../js/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/shopCar3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="logo"></div>
+			<div class="myCar"></div>
+			<p class="nowLogin">核对信息</p>
+		</div>
+		<div id="userInfo">
+			<div id="userAddress">
+				<p style="font: 14px/30px '微软雅黑';">收货人地址<span style=" font: 12px/30px '微软雅黑'; color: red;">（请先填写收货人地址）</span></p>
+				<div class="sendTo">
+					<span>寄送至：</span><input type="radio" checked="checked" />使用新地址
+				</div>
+				<table id="tab1">
+					<colgroup>
+						<col width="125px" align="right" class="firstCol"/>
+						<col   width="770"/>
+					</colgroup>
+					<tr>
+						<td><sup>*</sup>收货人</td>
+						<td> <input type="text" id="person"/></td>
+					</tr>
+					<tr>
+						<td>
+							<sup>*</sup>所在地区
+						</td>
+						<td>
+							<select name="" id="personArea">
+								<option value="-请选择-" selected="selected">-请选择-</option>
+								
+							</select>
+							<select name="" id="area">
+								<option value="-请选择-" selected="selected" id="choo">-请选择-</option>
+							</select>
+							<select name="" id="area1">
+								<option value="-请选择-" selected="selected" id="choo1">-请选择-</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<sup>*</sup>详细地址
+						</td>
+						<td>
+							<input type="text"  id="personAddress"/>
+							<p>请填写真实地址，不需要重复填写所在地区</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<sup>*</sup>联系电话1
+						</td>
+						<td>
+							<input type="text"  id="personPhone1"/>
+						</td>
+					</tr>
+					<tr>
+						<td>联系电话2</td>
+						<td>
+							<input type="text"  id="personPhone2"/>
+							<p>填写联系电话更方便我们联系您，固话请使用“区号(如0571)-电话号码”的形式。</p>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="button"  value="保存地址" id="saveAddress"/>
+						</td>
+					</tr>
+				</table>
+				
+				<p class="checkInfo">核实订货人信息</p>
+				<p>
+					<input type="radio"  checked="checked"/>请添加订货人信息  <a style="color: red; " href="#">修改</a>
+ 				</p>
+				<table id="tab2">
+					<colgroup>
+						<col  width="40px"/>
+					</colgroup>
+					<tr>
+						<td>姓名：</td>
+						<td><input type="text"  id="personName"/></td>
+					</tr>
+					<tr>
+						<td>手机：</td>
+						<td><input type="text" id="personTel" /><sapn>(订单和发货信息将发至您的号码)</sapn></td>
+					</tr>
+					<tr>
+						<td>邮箱：</td>
+						<td><input type="text" id="personMail" /></td>
+					</tr>
+				</table>
+				<div class="saveInfo">保存信息</div>
+			</div>
+		</div>
+		
+		<p id="sureList">确定购物清单 <input type="button" value="返回购物车,修改订单商品" id="backCar" /></p> 
+		<table id="tab3">
+			<thead>
+				<tr class="tr1">
+					<th class="first">商品信息</th>
+					<th>单价(元)</th>
+					<th>数量</th>
+					<th>优惠折扣</th>
+					<th class="last">小计(元)</th>
+				</tr>
+				<tr>
+					<td colspan="5" style="text-align: left;"> <span>店铺:</span>
+							<a href="http://www.kadang.com/store/5.html">卡当自营店</a> 
+							<img src="../img/onair.gif"/>
+							<span>联系客服</span>
+						</td>
+				</tr>
+			</thead>
+			
+			<tbody id="tbd1">
+				<!--<tr>
+					<td style="width: 320px;"  class="first">
+						<img src="../img/pic1.jpg"  class="pic"/>
+						<p>	
+趴趴熊抱枕音乐公仔玩偶毛绒玩具生日礼物女生 不定制当天发货</p>
+						<p class="style">款式:趴趴狗音乐枕有线款灰色+2件衣服 </p>
+						
+					</td>
+					<td>149.00</td>
+					<td>1</td>
+					<td></td>
+					<td class="last">149.00</td>
+				</tr>-->
+			</tbody>
+			
+			<tfoot>
+				<tr>
+					<td class="first" colspan="2" style="position: relative;">
+						<span style=" display: inline-block; position: absolute; top: 3px;">给卖家留言:</span>
+						<textarea name="" id="" cols="30" rows="3" style="resize: none; position: absolute; left: 75px; top: 3px;" placeholder="选填，在此填写您要对客服或快递公司说明的事宜"></textarea>
+							
+					</td>
+					<td class="last" colspan="3" style="color: #666666; ">
+					<span>配送方式</span><input type="radio" /><span> 普通快递</span>
+					<p>店铺合计（含运费）：<span class="totalmoney" >149.00</span></p>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<div id="footer">
+			<p class="p2">您需要先<span>保存地址信息</span>，再提交订单</p>
+			<div >
+				<input type="button" name="" id="sub" value="提交订单" />
+				<p class="p4"> 应付金额：<span id="yourpay">¥ 149.00</span> </p>
+				
+			</div>
+			<p class="p3">Copyright &copy;2006-2014 kadang.com 网上经营许可证号：浙B2-20140235</p>
+		</div>
+	</body>
+</html>

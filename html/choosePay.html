@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>卡当商城</title>
+		<script src="../js/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/choosePay.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="../css/choosePay.css" type="text/css" />
+		<link href="../img/icon.bmp" rel="shortcut icon"/>
+	</head>
+	<body>
+		<div id="header">
+			<div class="logo"></div>
+			<div class="myCar"></div>
+			<p class="nowLogin">订单已提交成功，请选择支付方式：</p>
+		</div>
+		
+		<div id="content">
+			<p style="line-height: 30px; padding: 0 10px;">
+				实付总金额 
+				<span style="color: #E14835; font: bold 18px '微软雅黑';" id="totalPrice"></span>
+			　　请在 0小时59分钟 内完成支付，否则订单会自动取消～￣▽￣)
+			</p>
+			
+			<div id="box">
+				<p>支付平台</p>
+				<ul class="box_ul1">
+					<li> 
+						<input type="radio" name="zhpt" id="zhpt" value="" />
+						<img src="../img/logo.gif" alt="" />
+					</li>
+					<li> 
+						<input type="radio" name="zhpt" id="zhpt" value="" />
+						<img src="../img/logo1.gif" alt="" />
+					</li>
+					<li> 
+						<input type="radio" name="zhpt" id="zhpt" value="" />
+						<img src="../img/logo2.gif" alt="" />
+					</li>
+					<li> 
+						<input type="radio" name="zhpt" id="zhpt" value="" />
+						<img src="../img/logo3.gif" alt="" />
+					</li>
+				</ul>
+				<p style="margin-top: 10px;">
+					网银支付&nbsp;
+					<span style="font: 13px '微软雅黑';">需前往银行柜台开通网上支付功能，信用卡和储蓄卡可用</span>
+				</p>
+				<ul class="box_ul2">
+					<li><lable for="zhpt"><input type="radio" name="zhpt"  id="zhpt"/><img src="../img/bank1.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt"/><img src="../img/bank2.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt"/><img src="../img/bank3.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt"/><img src="../img/bank4.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt"/><img src="../img/bank5.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt"/><img src="../img/bank6.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt" /><img src="../img/bank7.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt" /><img src="../img/bank8.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt"/><img src="../img/bank9.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt"/><img src="../img/bank_10.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt"/><img src="../img/bank11.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt"/><img src="../img/bank12.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt"/><img src="../img/bank13.gif" alt="" /></lable></li>
+					<li><lable for="zhpt"><input type="radio" name="zhpt" id="zhpt"/><img src="../img/bank14.gif" alt="" /></lable></li>
+					
+				</ul>
+				<p style="margin-top: 10px;">
+					快捷支付
+					<span style="font-size: 13px;">凭银行卡号及手机验证码付款，无需开通网银，有信用卡就能支付</span>
+				</p>
+				<ul class="box_ul3">
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_a.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_a.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_b.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_c.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_d.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_e.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_f.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_g.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_h.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_i.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_j.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_k.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_l.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_a.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_m.gif" />
+						</label>
+					</li>
+					<li>
+						<label for="zhpt">
+							<input type="radio" name="zhpt" id="zhpt" />
+							<img src="../img/bank_n.gif" />
+						</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="goPay">
+			<div class="goPay">去支付</div>
+			<div>
+				<img src="../img/onair.gif"/>
+				<a href="#">联系客服</a>(服务时间8:30-24:00)
+			</div>
+		</div>
+		<p class="footer">Copyright &copy;2006-2014 kadang.com 网上经营许可证号：浙B2-20140235</p>	
+	</body>
+</html>

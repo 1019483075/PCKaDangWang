@@ -1,0 +1,72 @@
+[
+   	{
+   		"imgSrc":"../img/bgift1.jpg",
+   		"price":"",
+   		"num":"",
+   		"info":"",
+   		"bySrc":"",
+   		"xpSrc":"",
+   		"title":"大图-8986牛皮钱包-8986详情页",
+   		"del":""
+   	},
+   	{
+   		"imgSrc":"../img/bgift2.jpg",
+   		"price":"￥79.00",
+   		"num":"9条评价",
+   		"info":"双层不锈钢变色爱心柄保温杯",
+   		"bySrc":"",
+   		"xpSrc":"../img/icon_xps.png",
+   		"title":"双层不锈钢变色爱心柄保温杯",
+   		"del":""
+   	},
+   	{
+   		"imgSrc":"../img/bgift3.jpg",
+   		"price":"￥139.00",
+   		"num":"270条评价",
+   		"info":"紧扣幸福 真皮编织 双层男士钛钢手链 手绳 送男友",
+   		"bySrc":"",
+   		"xpSrc":"",
+   		"title":"紧扣幸福 真皮编织 双层男士钛钢手链 手绳 送男友",
+   		"del":""
+   	},
+   	{
+   		"imgSrc":"../img/bgift4.jpg",
+   		"price":"￥129.00",
+   		"num":"279条评价",
+   		"info":"【热卖包邮】SL全店爆款新款自动扣时尚休闲皮带腰带",
+   		"bySrc":"",
+   		"xpSrc":"",
+   		"title":"【热卖包邮】SL全店爆款新款自动扣时尚休闲皮带腰带",
+   		"del":"￥129.00"
+   	},
+   	{
+   		"imgSrc":"../img/bgift5.jpg",
+   		"price":"￥148.00",
+   		"num":"542条评价",
+   		"info":"时尚运动款 钢带石英男士手表 个性刻字 送男友生日礼物 纪念",
+   		"bySrc":"",
+   		"xpSrc":"",
+   		"title":"时尚运动款 钢带石英男士手表 个性刻字 送男友生日礼物 纪念",
+   		"del":"￥411.00"
+   	},
+   	{
+   		"imgSrc":"../img/bgift6.jpg",
+   		"price":"￥84.00",
+   		"num":"117条评价",
+   		"info":"多功能剃须刀二合一USB打火机",
+   		"bySrc":"",
+   		"xpSrc":"",
+   		"title":"多功能剃须刀二合一USB打火机",
+   		"del":""
+   	},
+   	{
+   		"imgSrc":"../img/bgift7.jpg",
+   		"price":"",
+   		"num":"",
+   		"info":"",
+   		"bySrc":"",
+   		"xpSrc":"",
+   		"title":"PC首页-送男友礼物-更多",
+   		"del":""
+   	}
+]

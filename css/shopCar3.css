@@ -1,0 +1,51 @@
+*{ margin: 0; padding: 0;}
+img{ cursor: pointer;}
+ul,ol{ list-style: none}
+input{ outline: none;}
+
+#header{width: 900px; height: 130px; margin: 0 auto; overflow: hidden;}
+.logo{ width: 230px ; height: 50px; background: url(../img/logo.png) no-repeat ; margin-top: 15px; float: left; cursor: pointer; }
+.myCar{  width: 300px; height: 80px; background: url(../img/cart_step.png) no-repeat 0 -80px; float: right}
+.nowLogin{ clear: both; font: 16px/20px "微软雅黑"; color: #666666;}
+
+#userInfo{ width: 880px; height: auto; padding: 10px; border: 1px solid#DEDEDE; margin: 0 auto ; font-size: 12px; color: #666666;}
+#tab1 td{ height: 40px;}
+#tab1 sup{ color: red;}
+#tab1 p{ color: #999999;}
+#tab1{ border-bottom: 1px solid #DEDEDE;}
+#tab1 #saveAddress{ width: 90px; height: 25px; border-radius:4px ; background: #F6614B; color: white; border: none; 
+outline: none;}
+.sendTo{ height: 30px; background: #F8F8F8; line-height: 30px; margin-top: 10px;}
+
+.checkInfo{ font: 14px/50px "微软雅黑";}
+#tab2{ margin-left: 40px;}
+#tab2 td{ height: 35px;}
+
+.saveInfo{ width: 90px; height: 30px; border-radius: 4px; background: #f6614b; margin-left: 100px; 
+ text-align: center; font: 14px/30px "微软雅黑"; color: white;}
+
+
+#sureList{ width: 900px; margin: 0 auto; font: 14px/40px "微软雅黑"; margin-top: 10px;}
+#sureList input{ padding: 0 15px; background: #E14835; color: white; font: 12px/30px "微软雅黑"; 
+border: none;border-radius: 5px;}
+
+#tab3{ font-size: 12px; color: #333333; width: 900px; margin: 0 auto; border-spacing: 0;}
+#tab3 thead .tr1{ text-align: center; height: 30px; background: #f8f8f8;}
+#tab3 {text-align: center;}
+#tab3 th,#tab3 td{ border-top: 1px solid #DEDEDE; border-bottom: 1px solid #DEDEDE; padding-bottom: 10px; padding-top: 10px;}
+#tab3 tbody p{ text-align:left; float: right; width: 260px; margin-left: 4px; line-height: 18px;}
+#tab3 tbody .pic{ float: left; width: 50px;}
+table .first{ border-left: 1px solid #DEDEDE; }
+table .last{ border-right: 1px solid #DEDEDE; text-align: center;}
+#tab3 tfoot .last p{font: bold 12px/18px '微软雅黑'; text-align: right;}
+#tab3 .style{ color: #999999;}
+#tab3 tfoot{ text-align: left;}
+
+#footer{ width: 900px; margin: 0 auto; margin-top: 30px; font: 12px/16px "微软雅黑"; color: #666666;text-align: center;}
+#footer .p2{ float: right;}
+#footer .p2 span{ color: #6da4e3; cursor: pointer;}
+#footer div{ clear: both; overflow: hidden;text-align: right; margin-top: 10px;}
+#footer div input{float: right; width: 100px; height: 30px; color: #666666; font-weight: bold; margin-top: 10px;}
+#footer div .p4{float: right; line-height: 30px; margin-top: 10px; margin-right: 10px; }
+#footer div .p4 span{ font: bold 16px "微软雅黑"; color: #e8776a;}
+#footer .p3{  margin-top: 10px;}

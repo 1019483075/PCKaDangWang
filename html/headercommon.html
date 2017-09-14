@@ -1,0 +1,190 @@
+
+<style type="text/css">
+*{margin: 0;padding: 0; color: #999999; font-size: 12px;}
+ul,ol{list-style: none;}
+em,b,i,strong{font-style: normal;}
+a{ text-decoration: none;}
+#header{ width: 100%;height: auto; position: relative; margin: 0 auto; background: #FFFFFF;}
+	.login{ width: 1057px; height: 25px; border-bottom: 1px solid #ededed; margin-left:150px;
+	line-height: 25px;padding-left: 10px; }
+	.login p{ float: left; padding-left: 10px;}
+	 #wecolme2{ display: none;}
+	 #wecolme1{display: block;}
+	.login .nav2{  float: right;}
+	.login .list{ float: left; padding-left: 8px; padding-right: 8px; cursor: pointer;height: 25px; position: relative; margin-left: 1px;}
+	.login .icon b {display: inline-block;width:12px;height:18px;background: url(../img/new-common.png) no-repeat;}
+	.login .icon{ padding-left: 3;}
+	.login .icon2 b{ background: url(../img/phone.jpg) no-repeat 0 4px; width: 10px ;}
+	.login .icon1 b{background-position: 0 -420px;}
+	.login span{cursor: pointer;}
+	.login em{display: inline-block; height: 11px; width: 11px; background: url(../img/new-common.png) no-repeat 0 -406px;text-align: center; width: ;}
+	.myself,.hint,.login img,.collect{position: absolute;top: 26px; display: none; cursor: pointer; z-index: 3;}
+	
+	.search{height: 99px; width: 1124px; border-bottom: 1px solid #ededed; margin-right: 0; margin-left: 150px; position: relative;overflow: hidden;}
+	.search_inner{ margin-left: 250px; margin-top: 20px; width: 350px; height: 69px;}
+	.search_inner .searchbar{ width: 350px; height: 36px; background: url(../img/search_newyear.png)no-repeat;
+	 position: relative; line-height: 36px;}
+	.search_inner .searchbar input{ width: 300px; height: 28px;outline: none; border: none; margin-left: 10px;
+	text-indent: 5px;}
+	.search_inner .searchbar span{ display: inline-block; width: 40px; height: 36px; position:absolute;right: 0;}
+	.search .search_inner ul li{ float: left; margin-left: 15px; margin-top: 10px; cursor: pointer; color: #666666;}
+	.search img{ position: absolute;top: 15px; right:60px ;}
+	.nav{width: 1264px; height:33px ; border-bottom: 1px solid #999999 ; font: bold 14px/33px "微软雅黑"; position: relative;}
+	.nav .ul{ margin-left: 150px;}
+	.nav .ul li{ float: left; padding-left: 18px; padding-right: 19px; height: 33px;  position: relative;}
+	.nav .ul li img{ position: absolute; top: 0; left: 80px;}
+	.nav .ul li a{color: black;font: bold 14px/33px "微软雅黑"; display: block;}
+	#move{ height: 2px; background: red; position: absolute; bottom: 0; left: 100px;}
+	.logo{ position: absolute; width: 150px; height: 175px; background:url(../img/kadang.png) no-repeat;
+	left: 10px;top: 0; background-size: 150px 350px;}
+</style>
+
+<div id="header">
+<div class="login">
+	<p id="wecolme1">Hi,欢迎来到卡当网 &nbsp;<span class="toLogin">登陆</span> &nbsp;<span class="toRegist">注册</span></p>
+	<p id="wecolme2">Hi, &nbsp;<span class="userInfo"></span> &nbsp;<span class="exit">退出</span></p>
+	<ul class="nav2">
+		<li title="我的卡当" class="change list toLogin">
+			我的卡当
+			<em></em>
+			<ul class="myself">
+				<li class="toLogin"> 我的订单</li>
+				<li class="toLogin">我的优惠券</li>
+			</ul>
+		</li>
+		<li title="购物车" class="icon icon1 list">
+			<b></b>
+			购物车
+			<em></em>
+			<div class="hint" style="width: 300px;">您的购物车中暂无商品，赶快选择心爱的商品吧！</div>
+		</li>
+		<li title="手机版" class="icon icon2 list">
+			<b></b>
+			手机版
+			<img src="../img/img-code.jpg"  style="left: -40px; top: 34px;"/>
+			
+		</li >
+		<li title="我的手藏" class="change list">
+			我的手藏
+			<em></em>
+			<ul class="collect">
+				<li>收藏的商品</li>
+				<li>收藏的店铺</li>
+			</ul>
+		</li>
+		<li title="在线客服" class="list">
+			在线客服
+		</li>
+		<li title="收藏卡当网" class="list">
+			收藏卡当网
+		</li>
+	</ul>
+</div>
+<div class="search">
+	<div class="search_inner">
+		<div class="searchbar">
+			<input type="text"  maxlength="60" placeholder="不造女朋友喜欢什么？点这看看"/>
+			<span></span>
+		</div>
+		<ul>
+			<li>送女朋友</li>
+			<li>烂漫表白</li>
+			<li>我的订单查询</li>
+		</ul>
+	</div>
+	<img src="../img/header_kdDes.png" />
+</div>
+<div class="nav">
+	<ul class="ul">
+		
+		<li  id="birthday">
+			<a href="javascript:;">生日礼物</a>
+			<img src="../img/navHot (1).gif">
+		</li>
+		<li >
+			<a href="javascript:;">送女生</a>
+		</li>
+		<li>
+			<a href="javascript:;">送男生</a>
+		</li>
+		<li>
+			<a href="javascript:;">520惊喜好礼</a>
+		</li>
+		<li>
+			<a href="javascript:;">本周新品</a>
+		</li>
+		<li>
+			<a href="javascript:;">创意礼物</a>
+		</li>
+	</ul>
+	<div id="move"></div>
+</div>
+<div class="logo"></div>
+</div>
+<script src="../js/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+$(".login span").hover(function(){
+	$(this).css("color","red").siblings("span").css("color","#999999")
+},function(){
+	$(this).css("color","#999999")
+})
+$(".list").hover(function(){
+	$(this).css("color","red").siblings("color","#999")
+},function(){
+	$(this).css("color","#999")
+})
+$(".change").hover(function(){
+	$(this).children().eq(1).css("background","aliceblue").slideDown(100);
+},function(){
+	$(this).children().eq(1).css("display","none")
+})
+
+$(".icon1").hover(function(){
+	$(this).children().eq(2).css("background","aliceblue").slideDown(100)
+},function(){
+	$(this).children().eq(2).css("display","none")
+})
+$(".icon2").hover(function(){
+	$(this).children().eq(1).slideDown(100)
+},function(){
+	$(this).children().eq(1).css("display","none")
+})
+$(".change li").hover(function(){
+	$(this).css("color","red")
+},function(){
+	$(this).css("color","#999")
+});
+$(".search .searchbar span").hover(function(){
+	$(".search .searchbar").css("background-position","0 -39px")
+},function(){
+	$(".search .searchbar").css("background-position","0 0")
+});
+//nav块  鼠标悬停的位置来控制move div的位置
+function nav(){
+	$(".nav .ul>li").hover(function(){
+		var that=this;
+		$(this).children().filter("a").css("color","red");
+		$("#move").stop().animate({
+			width:$(that).children().filter("a").width(),
+			left:$(that).children().filter("a").offset().left-$("#header").offset().left
+		},80);
+	},function(){
+		$(this).children().filter("a").css("color","black");
+		$("#move").stop().animate({
+			width:0,
+			left:"100px"
+		},80);
+	});//
+}
+nav();
+$(".exit").click(function(){
+	$("#wecolme1").css("display","block");
+	$("#wecolme2").css("display","none");
+});
+$(".userInfo").click(function(){
+	//location.href="http://www.kadang.com/index.php?act=home&op=member";
+});//
+$("#birthday").click(function(){
+	location.href="sendGift.html";
+})
+</script>

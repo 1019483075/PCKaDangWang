@@ -1,0 +1,146 @@
+*{ margin: 0; padding: 0;}
+img{ cursor: pointer;}
+ul,ol{ list-style: none}
+a{text-decoration: none;}
+input{ outline: none;}
+#bigBox{ position: fixed; width: 100%;height: 7200px; background: rgba(0,0,0,0.6); top: 0; left: 0; 
+display: none; z-index: 5;}
+
+
+em,b,i,strong{font-style: normal;}
+
+#chooseGift{ width: 870px; height: 450px; overflow: hidden; background: #FFFFFF; position: absolute; left: 10px;
+border: 1px solid #cccccc; display: none;}
+#chooseGift h2{  font: bold 20px/52px "宋体" ; color: black;}
+#chooseGift ul li{height: 86px}
+#chooseGift ul li p{ ;font: bold 14px "宋体";color:black; cursor: pointer; line-height: 20px;}
+#chooseGift span{ margin-right:2px; cursor: pointer; font: 11px/16px "宋体";}
+#CGleft,#CGright{  height: 450px; float: left; padding-left: 0px;}
+#CGleft{width: 300px; border-right: 1px solid #cccccc}
+#CGright{width: 550px; overflow: hidden;}
+#CGright ul{ width: 275px; float: left;}
+
+
+#shopCarBox{ width: 1264px; margin: 0 auto; overflow: hidden;}
+#goodsInfo{ width: 1254px; margin-left: 10px; margin-top: 20px; ;}
+.left{ width: 360px; height: 460px; float: left;margin-right: 20px;position:relative;}
+.middle{ width: 530px;min-height: 460px; float: left;margin-right: 20px}
+.right{width: 190px; float: left; min-height: 460px; }
+.smallPic{ overflow: hidden; margin-top: 10px; position: absolute; bottom: 30px;}
+.smallPic div{ float: left;margin-right: 24px; padding: 1px; border: 1px solid #eaeaea;}
+.smallPic div img{ width: 48px; height: 48px; display: block;}
+.tellpartent{ width: 30%; margin-top: 16px;height: 14px;  float: left; position:absolute;left: 2px; bottom: 5px;}
+.tellpartent li{ float: left; cursor: pointer;}
+.tellpartent .li1{ width: 9px; height: 14px; background: url(../img/icons.png) no-repeat -68px -60px; margin-left: 5px;}
+.tellpartent .li2{ height: 14px; font: 12px/14px "微软雅黑"; color: #999999;}
+.share{ float: left; width: 100px; height: 20px; margin-top: 12px; overflow: hidden; border: 1px solid #999999;
+ cursor: pointer; display: none; position: absolute;bottom: 2px; left: 120px;}
+.share li{  float: left; width: 16px; height: 16px; margin-top: 2px; margin-right: 20px; }
+.share .li1{ background: url(../img/is.png) no-repeat -4px -120px;}
+.share .li2{ background: url(../img/is.png) no-repeat -4px -240px;}
+.bigPic{ position: relative; overflow: hidden; width: 360px; height: 360px;}
+.bigPic .move{ width: 180px; height: 180px; background: yellow; opacity: 0; position: absolute; top: 0;
+left: 0px; display: none; cursor: crosshair;}
+.middle h3{ font: 12px "微软雅黑"; color: #666666; float: left;}
+.price{ width: 480px; height: 41px; background: url(../img/bg.jpg) repeat-x; overflow: hidden;}
+.price h3{line-height: 41px; }
+.price .price_span1{ display: block; float: left;  font-size:18px; font-weight: 900; color:red;line-height: 41px; margin-left: 20px; }
+.price .price_span2{ color: #FFFFFF; background: red; margin-left: 20px;line-height: 41px; }
+
+.middle .send{ margin-top: 10px; }
+.middle .send p{ float: left; border: 1px solid #dedede; height: 18px; font: 12px/18px "微软雅黑"; padding-right:5px;
+padding-right: 5px; overflow: hidden; margin-right: 10px;}
+.middle .send p span{ display: block;float: left;color: #666666;}
+.middle .send p i{display: block; float: right; background: url(../img/icons.png) no-repeat -58px -46px; width: 6px; height: 4px; 
+margin-top: 7px; margin-left: 5px;}
+.middle .send h3{ line-height: 18px;}
+.middle .send .info{ color: #666666; line-height: 32px; clear: both; margin-left: 35px;}
+.middle .contact{  height: 48px; border-top: 1px dotted #dedede;border-bottom: 1px dotted #dedede;overflow: hidden; color: #666666;
+  padding-left: 15px; line-height: 48px;}
+.middle .contact p{ float: left;margin-left: 20px; color: #666666;}
+.middle .contact p span{color: #6da4e3;}
+
+.middle .chooseStyle{ margin-top: 10px;overflow: hidden; }
+.middle .chooseStyle h3{ line-height: 24px;}
+.middle .chooseStyle ul{ float: left, overflow: hidden; width: 420px; margin-left: 40px;}
+.middle .chooseStyle ul li{ float: left; padding: 4px; color:#666666; border: 1px solid #dedede; margin-right: 5px;
+ margin-top: 5px;}
+ .middle .chooseStyle .number{ clear: both; padding-top: 10px;}
+ .middle .chooseStyle .number span{ margin-left: 20px; color: #666666;}
+ .middle .chooseStyle .yourOperation{ margin-left: 40px;overflow: hidden; height: 42px; margin-top: 10px;}
+ .middle .chooseStyle .yourOperation .custom{ float: left; height: 42px;font: 14px/42px "微软雅黑"; padding-left: 15px;
+ padding-right: 15px; background: #e84847; color: #FFFFFF; border-radius: 5px; cursor: pointer;}
+ .middle .chooseStyle .yourOperation .collection{ float: left; height: 40px;font: 14px/40px "微软雅黑"; padding-left: 15px;
+ padding-right: 15px; background: #f8f8f8; color: #666666; border-radius: 5px; border: 1px solid #dedede;
+ cursor: pointer;margin-left: 10px;}
+ .middle .chooseStyle .yourOperation .buyCar{ float: left; height: 40px;font: 14px/40px "微软雅黑"; padding-left: 15px;
+ padding-right: 15px; background: #78c9c4; color: #FFFFFF; border-radius: 5px; border: 1px solid #dedede;
+ cursor: pointer; margin-left: 10px;}
+ 
+
+.middle .promise{ margin-top: 10px; overflow: hidden;}
+.middle .promise h3{line-height: 24px;}
+.middle .promise ul{ float: left; overflow: hidden;}
+.middle .promise ul li{ float: left; margin-left: 20px; overflow: hidden;}
+.middle .promise ul li i{ display: inline-block; height: 16px; width: 17px; background: url(../img/common1.png) no-repeat -3px -241px;
+  margin-top: 5px; float: left;}
+.middle .promise ul li a{ color: #666666; display: block;float: left; line-height: 24px; margin-left: 5px;}
+.middle .promise ul li .thirtyDay{ background-position: -3px -264px;}
+.middle .promise ul li .secrecy{ background-position: -3px -316px;}
+
+.right{ height: 543px; border: 1px solid #dedede; width: 180px;}
+.right h3{ color: #f16199; margin-left: 20px; font:  bold 14px/40px "微软雅黑";}
+.right .picBox{ height: 420px; margin-top: 10px; margin-left: 30px; width: 122px; overflow: hidden;position: relative;}
+.right .picBox ul{ width: 122px; position: absolute; top: 0;}
+.right .picBox ul li{ width: 122px; height: 140px;}
+.right .picBox ul li img{ width: 120px; height: 120px; margin-left: 1px;}
+.right .picBox ul li p{ color: #f6614b; font: bold 12px/19px; margin-left: 5px;} 
+
+
+.right .topBtn{ float: left; margin-left: 50px; width: 37px; height: 37px;margin-top: 20px;
+ background: url(../img/detailBg.png) no-repeat -1px -1px;}
+.right .botBtn{ float: left; margin-left: 10px; width: 38px; height: 37px;  margin-top: 20px;
+background: url(../img/detailBg.png) no-repeat -46px -1px;}
+
+#sureInfo{ width: 385px; height: 214px; position: fixed; top: 30%; left: 50%; margin-left: -190px; z-index: 100;
+ background: #FFFFFF; overflow: hidden; border-radius: 5px; display: none;}
+#sureInfo #close{ position: absolute; right: 5px; top: 5px; width: 22px; height: 22px; 
+background: url(../img/icons.png) no-repeat -54px -149px;cursor: pointer;}
+#sureInfo p{ width: 170px; height: 32px; font: 16px/31px "微软雅黑"; color: #666666; margin-left: 90px;
+ padding-left: 40px; background: url(../img/icons.png) 0 -186px no-repeat; margin-top: 65px;}
+#sureInfo .account{ color: #FFFFFF; font: 16px "微软雅黑"; padding: 15px; float: left; margin-left: 60px;
+border-radius: 5px; background: #f4614c; margin-top: 50px;cursor: pointer;}
+#sureInfo .stillBuy{color: black; font-size: 16px; padding: 14px; border-radius: 5px; margin-left: 10px; background: #f8f8f8;
+ border: 1px solid #dedede; float: left; margin-top: 50px; cursor: pointer;}
+
+#sideNav{ width: 40px; height: 270px; position: fixed;bottom: 20px; right: 12px; z-index: 100; font-size: 12px;}
+#sideNav li{ width: 38px; height: 33px; margin-top: 10px; border: 1px solid #CCCCCC;text-align: center; 
+color: #666666; padding-top: 5px; cursor: pointer; background: #eeeeee;}
+#sideNav .wenwo{ height: 65px; margin-top: 0;}
+#sideNav .wenwo p{ width: 31px; height: 31px; margin: 0 auto; background: url(../img/wenwo.png) no-repeat;}	
+#sideNav .backTop{ background: url(../img/online.png) no-repeat; display: none; padding-top: 0; height: 38px;}
+#sideNav .backTop p{ background: #666666; color:#FFFFFF; display: none; width: 38px; height: 33px;
+padding-top: 5px;}
+#sideNav .APP img{ position: fixed;bottom: 18px; right: 70px; display: none;}
+
+#totalBox{ position: absolute; bottom: 0; }
+
+.totalnum,.quJS{ float: left;}
+.totalnum{ text-align: center; line-height: 30px; width: 120px;}
+.quJS{ width: 80px;height: 30px; color: white; font: 14px/30px "微软雅黑"; text-align: center; background: red; 
+border-radius: 4px; float: right;}
+#buyCarBox{position:fixed; top: 100px; right: 70px;  width: 0px; z-index: 110 ;
+ background: #F8F8F8; height: 400px; overflow: hidden;border-radius: 5px; overflow: auto; }
+ #buyCarBox .infoBox{ width: 250px; border-bottom: 1px solid #DEDEDE; overflow: hidden;height: 100px; position: relative;}
+ #buyCarBox .infoBox img{ width: 50px; height: 50px; position: absolute; left: 0; top: 25px;}
+ #buyCarBox .infoBox p{ position: absolute;width: 130px; height: 80px;left: 50px; top: 0; text-align: left;
+  margin-left: 5px;padding-top: 20px;}
+ #buyCar .car{ color: #666666; font-weight: normal;}
+ #buyCarBox .infoBox b{ display: block; position: absolute; right: 20px; top: 10px; color: red;}
+  
+ #buyCarBox .del{ position: absolute; right: 30px; top: 30px;}
+ #buyCarBox .changenum{ width: 40px;position: absolute;right: 20px; top: 50px; text-align: center;}
+ #buyCarBox .pri{ font:bold 14px/20px "微软雅黑"; color: red; position: absolute; right: 5px; bottom: 2px;}
+
+#clos{ width: 20px; height: 20px; font:  bold 20px/20px "微软雅黑"; text-align: center; color: #FFFFFF; position: absolute;
+top: 0; left: 0; background: red; border-radius: 3px; z-index: 1000;}

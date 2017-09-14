@@ -1,0 +1,209 @@
+
+<style type="text/css">
+	*{ margin: 0; padding: 0;}
+	ul,ol,li{ list-style: none;}
+	a{ text-decoration: none;}
+	#registBox{ width: 1000px; height: 600px; position: fixed;top: 0;
+	right: -1000px; z-index: 100;}
+	#colse{ width:40px; height:40px; background-color:#e14835!important;
+	 background: url(../img/closePop.gif) no-repeat center center; cursor: pointer;}
+	#noRegist{ width: 200px; height: 290px; margin-top: 33px; float: left;border-right: 1px solid #e8e8e8;
+	font-size: 12px; color: #666666; padding-left:180px ;}
+		#noRegist p{ color: #999999; font: 13px/22px "微软雅黑";}
+		#noRegist .noRegist{ font:16px/24px "微软雅黑"; color: #333333;}
+		#noRegist ul{ overflow: hidden; margin-top: 15px;}
+		#noRegist ul li{ float: left; width: 60px; cursor: pointer;}
+		#noRegist ul li .ico{ width: 44px; height: 44px;  background:url(../img/login.png) no-repeat ;}
+		#noRegist ul li .ico1{ background-position: 0 -69px;margin: 0 auto;}
+		#noRegist ul li .ico2{ background-position: 0 -138px;margin: 0 auto;}
+		#noRegist ul li span{ display: block; width: 60px; text-align: center; line-height: 22px;color: #333333;}
+		#noRegist ul li .sian{ text-align: left; text-indent: 10px; }
+	#mustRegist{ width: 304px; float: left; height: 290px; margin-top: 33px; overflow: hidden;
+	padding-left: 26px;}
+		#mustRegist .Regist{font:16px/24px "微软雅黑"; color: #333333; margin-top: 10px;}
+		#mail,#pd{ width: 300px; height: 34px; margin-top: 35px; border: 1px solid #d8d8d8;
+		border-radius:3px;}
+		#mail span,#pd span{ width: 13px; height: 9px; float: left; margin: 12px 5px;
+		background: url(../img/login.png) no-repeat 0 -215px;}
+		#pd span{ background-position: 0 -246px; height: 15px; margin-top: 10px;}
+		#mail input,#pd input{ outline: none; width: 265px; margin-top: 8px; margin-left: 3px;
+		border: none;}
+		#mustRegist .deal{ margin-top: 25px; font: 12px/22px "微软雅黑"; color: #333333; cursor: pointer;}
+		#mustRegist .sub{ width: 300px; height: 34px; text-align: center; font: bold 16px/34px "微软雅黑";
+		color: #FFFFFF; background: #f6614b; border: none; border-radius:3px ; outline: none; margin-top: 5px;}
+		#mustRegist .haved{ font: 14px/36px "微软雅黑";}
+		#mustRegist .haved span{ color: #999999; cursor: pointer;}
+		#mailInfo,#pdInfo{ display: block; float: right; color: #f6614b; font-size: 12px;}
+</style>
+<div id="registBox">
+	<div id="colse"></div>
+	<div id="noRegist">
+		<p class="noRegist">无需注册</p>
+		<p>直接使用社交账号登录</p>
+		<ul>
+			<li id="sina">
+				<div class="ico ico0"></div>
+				<span class="sian">微博</span>
+			</li>
+			<li id="QQ">
+				<div class="ico ico1"></div>
+				<span>QQ</span>
+			</li>
+			<li id="zhifubao">
+				<div class="ico ico2"></div>
+				<span>支付宝</span>
+			</li>
+		</ul>
+	</div>
+	<div id="mustRegist">
+		<form action="index.html" method="post">
+			<p class=".regist" style="font:16px/24px '微软雅黑';color: #333333;">用户注册</p>
+			<div id="mail">
+				<span></span>
+				<input type="text" name="username" placeholder="邮箱"  class="getfocus" id="username"/>
+			</div>
+			<span id="mailInfo"> </span>
+			
+			<div id="pd">
+				<span></span>
+				<input type="password" name="pwd" id="pwd" placeholder="密码"  class="getfocus"/>
+			</div>
+			<span id="pdInfo"></span>
+			
+			<p class="deal" style="font:16px/24px '微软雅黑';color: #333333;"><a>《卡当注册协议》</a></p>
+			<input type="submit" value="同意协议并注册" name="sub" class="sub" />
+			<p class="haved" style="font:16px/24px '微软雅黑';color: #333333;">已有账号?<span class=" changToLogin" style="font-size: 14px;">登录</span></p>
+		</form>
+	</div>
+</div>
+<script src="../js/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../js/common.js" ></script>
+<script type="text/javascript">
+	$("#sina").click(function(){
+		location.href="https://api.weibo.com/oauth2/authorize?client_id=3775846575&redirect_uri=http%3A%2F%2Fwww.kadang.com%2Fapi.php%3Fact%3Dtosina%26op%3Dg&response_type=code";
+	}).hover(function(){
+		$(this).children().filter("span").css("color","red");
+	},function(){
+		$(this).children().filter("span").css("color","");
+	})//微博
+	$("#QQ").click(function(){
+		location.href="https://graph.qq.com/oauth/show?which=Login&display=pc&response_type=code&client_id=100233683&redirect_uri=http%3A%2F%2Fwww.kadang.com%2Fapi.php%3Fact%3Dtoqq%26op%3Dg&state=7abaf9ffeb28b13c821d75fee8dc28a2&scope=get_user_info";
+	}).hover(function(){
+		$(this).children().filter("span").css("color","red");
+	},function(){
+		$(this).children().filter("span").css("color","");
+	})//QQ;
+	$("#zhifubao").click(function(){
+		location.href="https://auth.alipay.com/login/express.htm?goto=https%3A%2F%2Fmemberexprod.alipay.com%3A443%2Fauthorize%2FuserAuthQuickLoginAction.htm%3Fe_i_i_d%3Dfe755e540ac685fcc2401f0370d8ce30";
+	}).hover(function(){
+		$(this).children().filter("span").css("color","red");
+	},function(){
+		$(this).children().filter("span").css("color","");
+	})//支付宝
+	$("#colse").click(function(){
+		$("#registBox").animate({
+			right:"-1000px"
+		},500).css("display","block");
+		$("#bigBox").css("display","none");
+		$("#loginBox").animate({
+			right:"-1000px"
+		},500).css("display","block");
+		$("#mailInfo").add("#pdInfo").html("");
+		$(".getfocus").val("");
+	})//关闭注册页面
+	var mailReg=/^\w+@[a-zA-Z0-9]+\.[a-z]{2,4}$/;
+	var pwdReg=/^.{6,20}$/;
+	$(".getfocus").eq(0).focus(function(){
+		$(this).parent().css("box-shadow","0 0 0px 1px rgba(255,4,4,1)");
+	}).blur(function(){
+		$(this).parent().css("box-shadow","");
+		if($(this).val()==""){
+			$("#mailInfo").html("邮件不能为空！");
+		}else if(!mailReg.test($(this).val())){
+			$("#mailInfo").html("格式不正确，请输入邮件格式！");
+		}else{
+			$("#mailInfo").html("");
+		}
+	});//
+	$(".getfocus").eq(1).focus(function(){
+		$(this).parent().css("box-shadow","0 0 0px 1px rgba(255,4,4,1)");
+	}).blur(function(){
+		$(this).parent().css("box-shadow","");
+		if($(this).val()==""){
+			$("#pdInfo").html("密码不能为空！");
+		}else if(!pwdReg.test($(this).val())){
+			$("#pdInfo").html("密码长度需介于 6 和 20 之间");
+		}else{
+			$("#pdInfo").html("");
+		}
+	});//
+	$(".deal").hover(function(){
+		$(this).children().wrap("<u></u>")
+	},function(){
+		$(this).children().remove();
+		$("<a>《卡当注册协议》</a>").appendTo($(this))
+	}).click(function(){
+		location.href="http://www.kadang.com/document/agreement.html";
+	});//
+	
+	$(".sub").click(function(){
+		if($(".getfocus").eq(1).val()==""){
+			$("#pdInfo").html("密码不能为空！")
+		}
+		if($(".getfocus").eq(0).val()==""){
+			$("#mailInfo").html("邮箱不能为空！")
+		}
+		var flag=true;
+		if(document.cookie){
+			var reg=/\s+/g;
+			var res=document.cookie.replace(reg,"").split(";");
+			for (var i=0;i<res.length;i++) {
+				var arr=res[i].split("=")
+				var arr1=JSON.parse(arr[1])
+				console.log(arr1);
+				if($("#username").val().replace(/\s+/g,"")==arr1.username){
+					$("#mailInfo").html("该用户已被注册");
+					flag=false;
+					return false;
+					break;
+				}
+			};
+		};
+		if((($(".getfocus").eq(1).val()=="") || !(pwdReg.test($(".getfocus").eq(1).val()))) || (($(".getfocus").eq(0).val()=="") || !(pwdReg.test($(".getfocus").eq(0).val())))||!flag  ){
+			$(".getfocus").eq(0).parent().css("box-shadow","0 0 0px 1px rgba(255,4,4,1)");
+			return false;
+		}else{
+			
+				if(cookie.getCookie("num")){
+					var n=parseInt(cookie.getCookie("num"))
+				}else{
+					var n=-1;
+				}
+				n++;
+				cookie.setCookie("userinfo"+n,JSON.stringify({
+					"username":$("#username").val(),
+					"pwd":$("#pwd").val()
+				}))
+				cookie.setCookie("num",n)	
+				$(".userInfo").html($("#username").val());
+				$(".login #wecolme1").css("display","none");
+				$(".login #wecolme2").css({
+					"display":"block",
+				});
+				$("#loginBox").add("#registBox").animate({
+					right:"-1000px"
+				},100).css("display","block");
+				$("#bigBox").css("display","none");
+				return false;
+		}
+		 
+	});
+	$(".sub").hover(function(){
+		$(this).css("background","red")
+	},function(){
+		$(this).css("background","")
+	});
+	$("#registBox").click(function(){
+		$(".getfocus").css("box-shadow","")
+	});
+</script>

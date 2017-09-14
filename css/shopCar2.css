@@ -1,0 +1,64 @@
+*{ margin: 0; padding: 0;}
+img{ cursor: pointer;}
+ul,ol{ list-style: none}
+a{text-decoration: none;}
+input{ outline: none;}
+#bigBox{ position: fixed; width: 100%;height: 1000px; background: rgba(0,0,0,0.6); top: 0; left: 0; 
+display: none; z-index: 5;}
+
+#header{width: 900px; height: 130px; margin: 0 auto; overflow: hidden;}
+.logo{ width: 230px ; height: 50px; background: url(../img/logo.png) no-repeat; margin-top: 15px; float: left; cursor: pointer; }
+.myCar{  width: 300px; height: 80px; background: url(../img/cart_step.png) no-repeat; float: right}
+.nowLogin{ clear: both; font: 12px/20px "微软雅黑"; color: #999999;}
+.nowLogin span{ color: #333333;cursor: pointer;}
+
+#content{ width: 900px; margin: 0 auto;}
+table{ width: 898px; font: 12px "微软雅黑"; border-spacing: 0px; text-align: center;}
+table tr{ width: 898px; }
+table thead{ line-height: 30px;}
+th,td{ border-top: 1px solid #DEDEDE; border-bottom: 1px solid #DEDEDE; padding-bottom: 10px; padding-top: 10px;}
+table .first{ border-left: 1px solid #DEDEDE; position: relative;}
+table .isBuy{ position: absolute; top: 50%; margin-top: -5px;  left: 20px;}
+table .last{ border-right: 1px solid #DEDEDE;}
+table tfoot td{ text-align: right;}
+table .changenum{ width: 40px; text-align: center;}
+table .style{color: #999999; margin-top: 5px;}
+table .del{ cursor: pointer;}
+table tbody td img{ width: 60px; height: 30px;}
+
+
+#youchoice{ float: right; margin-top: 10px;}
+#youchoice a{ color: #999999; font: 14px/20px "微软雅黑";}
+#youchoice input{ width: 100px; height: 40px; border-radius: 5px; background: red; border: none; outline: none;
+color: white; font: 14px "微软雅黑"; cursor: pointer;}
+
+#footer{ width: 900px; margin: 0 auto; height: 270px; margin-top: 60px; }
+#footer #more{ height: 38px; border: 1px solid #DEDEDE; color: #666666;font: 14px/38px "微软雅黑"; padding-left: 20px;
+padding-right: 20px; border-bottom: none; width: 200px; text-align: center;}
+#footer ul{ height: 229px; width: 898px; border: 1px solid #DEDEDE; overflow: hidden;}
+#footer ul li{ width: 129px; height: 227px;  float: left; margin-left: 18px; margin-top: 20px; text-align: center;}
+#footer ul li div{ width: 125px; height: 127px; padding: 1px; border: 1px solid #DEDEDE;}
+#footer ul li p{ font: 12px/20px "微软雅黑"; color: #999999;}
+#footer ul li span{ font: bold 14px/18px "微软雅黑"; color: red;}
+#footer ul li  div img{ width: 125px; height: 125px;}
+
+#bottom{ width: 900px; height: 50px; font: 12px/50px "微软雅黑"; text-align: center; margin: 0 auto; color: #999999;}
+
+
+#sideNav{ width: 40px; height: 270px; position: fixed;bottom: 20px; right: 12px; z-index: 100; font-size: 12px;}
+#sideNav li{ width: 38px; height: 33px; margin-top: 10px; border: 1px solid #CCCCCC;text-align: center; 
+color: #666666; padding-top: 5px; cursor: pointer; background: #eeeeee;}
+#sideNav .wenwo{ height: 65px; margin-top: 0;}
+#sideNav .wenwo p{ width: 31px; height: 31px; margin: 0 auto; background: url(../img/wenwo.png) no-repeat;}	
+#sideNav .backTop{ background: url(../img/online.png) no-repeat; display: none; padding-top: 0; height: 38px;}
+#sideNav .backTop p{ background: #666666; color:#FFFFFF; display: none; width: 38px; height: 33px;
+padding-top: 5px;}
+#sideNav .APP img{ position: fixed;bottom: 18px; right: 70px; display: none;}
+
+#noGoods{ width: 900px; height: 205px; margin: 0 auto; display: none;}
+#noGoods .title2{ font: 16px/20px "微软雅黑"; color: #333333;}
+#noGoods .shopCar_info{ width: 898px; height: 168px; border: 1px solid #DEDEDE; margin-top: 12px;}
+#noGoods .div1{ width: 64px; height: 59px; float: left; margin-left: 260px; margin-top: 50px; background: url(../img/cartEmpty.png) no-repeat;}
+#noGoods .p1{ color: #999999; font: 13px/20px "微软雅黑"; float: left; margin-top: 50px; padding-top: 10px; margin-left: 20px;}
+#noGoods .p1 span{ color: #666666; cursor: pointer;}
+#noGoods .p1 a{ color: #666666;}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/goodsList.css"/>
+		<script src="js/swiper-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/goodsList.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class=" container container1" >
+			<div id="headerCommon">
+				<header>
+					新品上市
+					<button class="btn">
+						<img src="img/shopcar.png"/>
+					</button>
+				</header>
+				<nav>
+					<ul class="nav">
+					</ul>
+					<div class="active"></div>
+				</nav>
+			</div>
+			<div id="wrapper">
+				<ul class="liWrap">
+				</ul>
+			</div>
+			<div class="footercontainer"></div>
+		</div>
+		
+		<div class="container container2">
+			<header >
+					<span class="iconfont a1" style="position: absolute;left: 0.2rem; font-size: 0.5rem;">&#xe619</span>
+					商品资料
+					<button class="btn">
+						<img src="img/shopcar.png"/>
+					</button>
+			</header>
+			<section >
+				<div class="swiper-container" >
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" style="background: yellow;">
+							<img src="img/aaa.png"/>
+						</div>
+						<div class="swiper-slide" style="background: orange;">
+							<img src="img/aaa.png"/>
+						</div>
+						<div class="swiper-slide" style="background: blue;">
+							<img src="img/aaa.png"/>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+					
+				<p id="title">美特斯邦威 迷底红色花朵印花短袖连衣裙</p>
+				<p id="aprice">
+					<span class="oldprice">￥85.00</span> 
+					<span class="nowprice">
+						<s>159.00</s>
+					</span>
+				</p>
+				<div class="buynum">购买人数：209</div>
+				<div class="detail">
+					<div><img src="img/tanhao.png"/></div>
+					<div>查看商品详情</div>
+					<div id="">
+						<img src="img/iconright.png" alt="" />
+					</div>
+				</div>
+			</section>
+			<footer>
+				<button class="addToCar">添加到购物车</button>
+			</footer>
+		</div>
+		
+		<div class="container container3" id="wraper">
+			<header >
+				<span class="iconfont a2" style="position: absolute;left: 0.2rem; font-size: 0.5rem;">&#xe619</span>
+				商品资料
+				<button class="btn">
+					<img src="img/shopcar.png"/>
+				</button>
+			</header>
+			<section>
+				<img src="img/aaa.png" alt=""  class="bigpic"/>
+				<ul class="infoList" >
+					<li>品牌名称：美特斯邦威Meterbonwe</li>
+					<li>商品名称：美特斯邦威 米底红色花朵印花短袖连衣裙</li>
+					<li>材质：面料：65.5%粘纤，34.5%棉；里料：100%聚酯纤维</li>
+					<li>产地：中国</li>
+					<li>商品编号：6900252970172</li>
+					<li>最高洗涤温度30度，缓和程序，不可漂白悬挂晾干，熨斗底板最高温度110度，不可干洗</li>
+					<li>所属分类：女款连衣裙</li>
+					<li>备注：无配件</li>
+					<li>其他：24164320</li>
+				</ul>
+			</section>
+		</div>
+		
+		<div class="container container4">
+			<header >
+				购物车
+				<button>
+					结算
+				</button>
+			</header>
+			
+			<div class="total">
+				<p>
+					商品数量: <span class="goodsNum">0</span>
+					应付总额(不含运费): <span class="totalPrice">￥0</span>
+				</p>
+			</div>
+			<div class="wrapper" id="wrapper">
+				<ul class="outUl">
+					<!--<li class="outLi">
+						<ul class="inUl">
+							<li>
+								<img src="img/aaa.png" alt="" />
+							</li>
+							<li>
+								<p>ESPRI 气质V领玫红T恤</p>
+								<p>单价: <b >￥199</b></p>
+								<p class="numcontainer">数量: <span class="minus">-</span><input type="text" value="1"  class="num"/> <span class="add">+</span></p>
+							</li>
+							<li class="iconfont">
+								&#xe68d;
+							</li>
+						</ul>
+					</li>-->
+				</ul>
+			</div>
+			
+			
+			<footer class="footercontainer4">
+				
+			</footer>
+		</div>
+		
+		<div class="container container5">
+			<script type="text/javascript">
+				$.ajax({
+					type:"get",
+					url:"mode.html",
+					async:true,
+					success:function(res){
+						$(res).appendTo($(".container5"))
+					}
+				});
+			</script>
+		</div>
+	</body>
+</html>

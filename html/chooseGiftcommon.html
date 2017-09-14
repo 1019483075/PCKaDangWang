@@ -1,0 +1,170 @@
+
+<style type="text/css">
+*{margin: 0;padding: 0; color: #999999; font-size: 12px;}
+ul,ol{list-style: none;}
+em,b,i,strong{font-style: normal;}
+a{ text-decoration: none;}
+#chooseGift{ width: 1200px; height: 500px; overflow: hidden; background: #FFFFFF;}
+#chooseGift h2{  font: bold 20px/62px "微软雅黑" ; color: black;}
+#chooseGift ul li{height: 96px}
+#chooseGift ul li p{ ;font: bold 14px "微软雅黑";color:black; cursor: pointer;}
+#chooseGift span{ margin-right:4px; line-height: 24px;cursor: pointer; }
+#CGleft,#CGright{  height: 450px; margin-top: 27px; float: left; padding-left: 20px;}
+#CGleft{width: 300px; border-right: 1px solid #cccccc}
+#CGright{width: 830px; overflow: hidden;}
+#CGright ul{ width: 270px; float: left;}
+</style>
+
+<div id="chooseGift">
+
+	<div id="CGleft">
+		<h2>按兴趣选礼物</h2>
+		<ul>
+			<li>
+				<p>礼物送给谁</p>
+				<span>送普通朋友</span>
+				<span>送心仪/暗恋对象</span>
+				<span>送女盆友/老婆</span><br />
+				<span>送男盆友/老公</span>
+				<span>送情侣</span>
+			</li>
+			
+			<li>
+				<p>收礼个人性</p>
+				<span>女神</span>
+				<span>可爱/萌妹子</span>
+				<span>文艺女青年</span>
+				<span>吃货</span>
+				<span>学生党</span><br />
+				<span>星座控</span>
+				<span> 白领</span>
+				
+			</li>
+			<li>
+				<p>礼物价格</p>
+				<span>100以下</span>
+				<span>100-200</span>
+				<span>200-500</span>
+				<span>500以上</span>
+				<span>包邮</span>
+			</li>
+			<li>
+				<p>礼物类型</p>
+				<span>照片定制</span>
+				<span>名字定制</span>
+				<span>创意又有心意</span>
+				<span> 一对一对的</span><br />
+				<span>实用</span>
+				<span>浪漫</span>
+				<span>礼物套装</span>
+				<span>星座 </span>
+			</li>
+		</ul>
+		
+	</div>
+	<div id="CGright">
+		<h2>按类目选礼物</h2>
+		<ul>
+			<li>
+				<p>时尚饰品</p>
+				<span>项链</span>
+				<span>手链手镯</span>
+				<span>戒指</span>
+				<span>发饰/胸针</span>
+				<span>耳钉耳环</span><br />
+				<span>男士饰品</span>
+				<span>高档珠宝</span>
+			</li>
+			<li>
+				<p>布艺家纺</p>
+				<span>毛绒公仔</span>
+				<span>抱枕靠垫</span>
+				<span>居家服/情趣</span>
+			</li>
+			<li>
+				<p>数码办公</p>
+				<span>记事本</span>
+				<span>钢笔</span>
+				<span>手机壳</span>
+				<span>鼠标垫</span>
+				<span>移动电源</span><br />
+				<span>U盘</span>
+				<span>名片夹</span>
+			</li>
+		</ul>
+		
+		<ul>
+			<li>
+				<p>围巾配饰</p>
+				<span>围巾/手套</span>
+				<span>钱包/背包</span>
+				<span>手表</span>
+				<span>皮带</span>
+				<span>钥匙扣</span><br />
+				<span>zippo/军刀</span>
+				<span>梳子/化妆镜 </span>
+			</li>
+			<li>
+				<p>花/巧克力</p>
+				<span>巧克力</span>
+				<span>永生花</span>
+				<span>金箔花</span>
+				<span>酒水饮料</span><br />
+				<span>卡通花/创意花束</span>
+				<span>蜡烛/气氛配件</span>
+			</li>
+			<li>
+				<p>照片印刷</p>
+				<span>照片冲印</span>
+				<span>年历挂历</span>
+				<span>报纸</span>
+				<span>纪念册/贺卡</span><br />
+				<span>扑克</span>
+			</li>
+		</ul>
+		
+		<ul>
+			<li>
+				<p>创意摆件</p>
+				<span>DIY模型/拼图</span>
+				<span>水晶摆件</span>
+				<span>装饰画/摆件</span><br />
+				<span>蜡烛/创意灯</span>
+				<span>音乐盒</span>
+				<span>印章</span>
+				<span>汽车饰品</span>
+			</li>
+			<li>
+				<p>家居日用</p>
+				<span>变色杯/保温杯</span>
+				<span>遮阳伞</span>
+				<span>创意灯</span>
+				<span>情趣礼品</span><br />
+				<span>生活电器</span>
+				<span>碗筷锅具</span>
+				<span>收纳</span>
+				<span>洗漱用品</span>
+			</li>
+			<li>
+				<p>服装内衣</p>
+				<span>女士上装</span>
+				<span>情侣套装</span>
+				<span>亲子套装</span>
+				<span>居家内衣</span>
+			</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript" src="../js/jquery-2.2.3.min.js" ></script>
+<script type="text/javascript">
+	$("#chooseGift p").hover(function(){
+		$(this).css("color","red")
+	},function(){
+		$(this).css("color","")
+	});
+	$("#chooseGift span").hover(function(){
+		$(this).css("color","red")
+	},function(){
+		$(this).css("color","")
+	})
+</script>

@@ -1,0 +1,338 @@
+<style type="text/css">
+	*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100px;
+}
+#cover{
+	width: 100%;
+	height: 100%;
+}
+#cover .swiper-container{
+	height: 100%;
+	width: 100%;
+}
+#cover .swiper-slide{
+	background: #f3eff0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+#cover .one .topWrap{
+	height: 0.9rem;
+	width: 100%;
+	background: -webkit-linear-gradient(top,#e5376c,#a11312);
+	color: white;
+	text-align: center;
+	position: relative;
+	font-size: 0.4rem;
+	line-height: 0.9rem;
+	vertical-align: middle;
+}
+#cover .one .topWrap .recharge{
+	color: white;
+	display: inline-block;
+	position: absolute;
+	background: #be0c0c;
+	height: 0.5rem;
+	width: 1rem;
+	border-radius: 15px;
+	border: none;
+	right: 0.2rem;
+	top: 0.2rem;
+	outline: none;
+	font-size: 0.2rem;
+	line-height: 0.5rem;
+}
+#cover .one .userInfo{
+	height: 1.66rem;
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 0.6rem;
+	padding-left: 0.32rem;
+}
+#cover .one .userInfo img{
+	height: 1.66rem;
+	width: 1.66rem;
+	float: left;
+	font-weight: bold;
+	border-radius: 10px;
+}
+#cover .one .userInfo .infowrap{
+	height: 1.66rem;
+	float: left;
+	font-size: 0.35rem;
+	color: #242424;
+	line-height: 0.5rem;
+	margin-left: 0.2rem;
+}
+#cover .one .userInfo .infowrap p:nth-of-type(1){
+	margin-top: 0.34rem;
+}
+#cover .one .userInfo .infowrap p .price{
+	color: #f00200;
+	font-weight: 900;
+}
+#cover .mainInfo{
+	height: 3.64rem;
+	width: 5.6rem;
+	border: 1px solid #dedede;
+	border-radius: 15px;
+	background: white;
+	margin: 0.86rem auto 0;
+}
+#cover .mainInfo div{
+	overflow: hidden;
+	height: 0.91rem;
+	width: 100%;
+	border-bottom: 1px solid #DEDEDE;
+	box-sizing: border-box;
+	font-size: 0.35rem;
+	padding-left: 0.3rem;
+	line-height: 0.91rem;
+}
+#cover .mainInfo div p{
+	float: left;
+}
+#cover .mainInfo div img{
+	float: right;
+	height: 0.38rem;
+	width: 0.28rem;
+	margin-right: 0.3rem;
+	margin-top: 0.3rem;
+}
+
+ #cover1{
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.4);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	display: none;
+}
+#wrap{
+	display: none;
+	width: 4.72rem;
+	height: 3.74rem;
+	position: fixed;
+	left: 0.84rem;
+	top: 1.82rem;
+	z-index: 3;
+	background: #e8e8e8;
+	border-radius: 15px;
+	overflow: hidden;
+}
+#wrap .title{
+	width: 3.7rem;
+	height: 0.7rem;
+	margin: 0.2rem auto 0;
+	font-size: 0.3rem;
+	text-align:center;
+	line-height: 0.7rem;
+	border-bottom: 1px solid #ababab;
+}
+#wrap .touxiang{
+	width: 100%;
+	height: 2.1rem;
+	overflow: hidden;
+}
+#wrap .touxiang div{
+	width: 1.15rem;
+	height: 1.8rem;
+	margin-top: 0.37rem;
+	float: left;
+	text-align: center;
+	font-size: 0.3rem;
+	font-weight: 500;
+	line-height: .5rem;
+	position: relative;
+}
+#wrap .touxiang div img{
+	width: 1.15rem;
+	height: 1.15rem;
+}
+#wrap .touxiang div:nth-last-of-type(2){
+	margin-left: 0.65rem;
+}
+#wrap .touxiang div:nth-last-of-type(1){
+	margin-left: 1rem;
+}
+.footercontainer{
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+	height: 1rem;
+	width: 100%;
+	background-color: #484850!important;
+}
+#camera,#pic{
+	width: 1.15rem;
+	height: 1.15rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	overflow: hidden;
+}
+</style>
+
+<div id="cover1"></div>
+
+<div id="cover">
+		<div class="swiper-container">
+				<div class="swiper-slide one">
+					<div class="topWrap">
+						<span class="myShow">我的秀</span>
+						<button class="recharge">充值</button>
+					</div>
+					<div class="userInfo">
+						<img src="img/touxiang.png" alt="" class="choosePic" />
+						<div class="infowrap">
+							<p>
+								<span class="nicheng">昵称：</span><span class="name">未知</span>
+							</p>
+							<p>
+								<span class="yue">余额：</span><span class="price">0</span>
+							</p>
+						</div>
+					</div>
+					<div class="mainInfo">
+						<div>
+							<p>我的订单</p>
+							<img src="img/icon3.png" alt="" />
+						</div>
+						<div>
+							<p>我的优惠券</p>
+							<img src="img/icon3.png" alt="" />
+						</div>
+						<div>
+							<p>浏览记录</p>
+							<img src="img/icon3.png" alt="" />
+						</div>
+						<div>
+							<p>我的收藏</p>
+							<img src="img/icon3.png" alt="" />
+						</div>
+					</div>
+
+			<!--		<div class="footer">
+						<div>
+							<p>
+								<img src="img/1.png"/>
+							</p>
+							首页
+						</div>
+						<div>
+							<p>
+								<img src="img/2.png"/>
+							</p>
+							分类
+						</div>
+						<div>
+							<p>
+								<img src="img/3.png"/>
+							</p>
+							购物车
+						</div>
+						<div>
+							<p>
+								<img src="img/4.png"/>
+							</p>
+							我的秀
+						</div>
+						<div>
+							<p>
+								<img src="img/5.png"/>
+							</p>
+							更多
+						</div>
+					</div>
+				</div>-->
+		</div>
+</div>
+		<div class="footercontainer" ></div>
+		
+		
+		<div id="wrap">
+			<p class="title">选择操作</p>
+			<div class="touxiang">
+				<div>
+					<img src="img/carmer.png" alt="" />
+					<p>相机</p>
+					<input type="file" accept="image/*" capture="camera" id="camera" />
+				</div>
+				<div>
+					<img src="img/photo.png" alt="" />
+					<p>相册</p>
+					<input type="file" name="pic" id="pic"accept="image/*" />
+				</div>
+			</div>
+		</div>
+<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>	
+<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var camera=document.getElementById("camera");
+	var pic=document.getElementById("pic");
+	var oImg=document.getElementsByClassName("choosePic")[0]
+	if(cookie.getCookie("username")){
+		$(".name").html(cookie.getCookie("username"))
+	};
+	$(".choosePic").tap(function(){
+		$("#wrap").add($("#cover1")).css("display","block")
+	});
+	$("#cover1").tap(function(){
+		$(this).add($("#wrap")).css("display","none")
+	})
+	$.ajax({
+		"url":"footerCommon.html",
+		success:function(res){
+			$(".footercontainer").append(res)
+		}
+	})//ajax加载底部公共文件
+	if(localStorage.getItem("userImg")){
+		oImg.src=localStorage.getItem("userImg");
+	}
+	
+	camera.onchange=function(evt){
+		$("#cover1").add($("#wrap")).css("display","none")
+		 var files = evt.target.files;
+		   for(var i = 0, f; f = files[i]; i++){
+	        if(!f.type.match('image.*')) continue;
+	        
+		        var reader = new FileReader();
+		        reader.onload = (function(theFile){
+		            return function(e){
+		               oImg.src=e.target.result;
+		               localStorage.setItem("userImg",e.target.result);
+		               
+		            }
+		        })(f);
+	        reader.readAsDataURL(f);
+    	}  
+	};//选择相片
+	pic.onchange=function(evt){
+		$("#cover1").add($("#wrap")).css("display","none")
+		 var files = evt.target.files;
+		   for(var i = 0, f; f = files[i]; i++){
+	        if(!f.type.match('image.*')) continue;
+	        
+		        var reader = new FileReader();
+		        reader.onload = (function(theFile){
+		            return function(e){
+		               oImg.src=e.target.result;
+		               localStorage.setItem("userImg",e.target.result);
+		              
+		            }
+		        })(f);
+	        reader.readAsDataURL(f);
+    	}  
+	};
+</script>

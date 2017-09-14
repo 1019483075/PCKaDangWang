@@ -1,0 +1,92 @@
+*{ margin: 0; padding: 0;}
+a{ text-decoration: none;}
+ul{ list-style: none;}
+body{ background: #f5f5f5;}
+#container{ width: 1264px; height: auto; margin: 20px auto 0; background: #FFFFFF;}
+#navAll{ width: 1254px; height: auto; margin-top: 25px; position: relative; margin-left: 10px; color: #666666; overflow: hidden;}
+	.navAll_left,.navAll_right,.mainPic{ float: left; height: 464px; margin-left:20px;}
+	.navAll_left{ width: 152px; margin-left: 0px; }
+	.navAll_left p,.navAll_right p{ color: black; font: bold 16px/36px "微软雅黑"; margin-top: 6px;}
+	.navAll_left .hotTag{ overflow: hidden; border-bottom: 1px solid #ededed; padding-bottom: 15px;}
+	.navAll_left .hotTag ul{overflow: hidden;}
+	.navAll_left .hotTag ul li{ float: left; width: 76px; line-height: 20px; color: #666666;}
+	.red{ color: red!important;}
+	.navAll_left .menu_nav{ font: 14px/32px "微软雅黑"; padding-left: 42px; height: 32px; position: relative; width: 110px;color: #666666}
+	.navAll_left .menu_nav p{background: url(../img/menuImg.png) no-repeat; height: 17px; position: absolute; left: 10px; width: 20px;}
+	.navAll_left .menu_nav .menu_nav1{background-position: -10px -11px;}
+	.navAll_left .menu_nav .menu_nav2{background-position: -10px -106px;}
+	.navAll_left .menu_nav .menu_nav3{background-position: -10px -200px;}
+	.navAll_left .menu_nav .menu_nav4{background-position: -10px -233px;}
+	.navAll_left .menu_nav .menu_nav5{background-position: -10px -297px;}
+	.navAll_left .menu_nav .menu_nav6{background-position: -10px -169px;}
+	.navAll_left .menu_nav .menu_nav7{background-position: -10px -395px;}
+	.navAll_left .menu_nav .menu_nav8{background-position: -10px -329px;}
+	.navAll_left .menu_nav .menu_nav9{background-position: -10px -136px;}
+	.navAll_left  .menu_nav ul{ position: absolute; left: 152px; top: 0; width: 150px; height: 454px;
+	background: rgba( 243,230,230,0.6); display:none; z-index:100; padding-top: 10px; }
+	.navAll_left .menu_nav ul li{ margin-left: 25px; width: 100px; padding: 4px 0 4px 5px; line-height: 18px; margin-bottom: 15px;color: #666666;}
+	.navAll_left .menu_nav span{ display:inline-block; height:0px; width:0px;border-left: 8px solid white ; border-top: 4px solid transparent;
+	 border-bottom: 4px solid transparent; float: right; margin-right: 10px; margin-top: 13px;}
+	
+	
+	.mainPic{ width: 820px;  background: yellow;position: relative; overflow: hidden;cursor: pointer;}
+		.mainPic img{ position: absolute;height: 464px; }
+		.leftBtn,.rightBtn{ position: absolute; top:50%;margin-top: -40px; font: bold 40px/80px "微软雅黑";
+		color: white; background: #666666; text-align: center; height: 80px; width: 40px; opacity: 0.8; border-radius: 5px;
+		display: none;}
+		.leftBtn{ left: 20px;}
+		.rightBtn{ right: 20px;}
+		.mainPic .smallBtn{ height: 16px; width: 16px; border-radius: 50%; background: #666666; position: absolute;
+		bottom: 15px;}
+		
+	.navAll_right{  width: 190px;}
+		.navAll_right img{ cursor: pointer;}
+	/* 以上是navAll块的css*/
+	#recommend{ width: 1254px; margin-top: 40px; margin-left: 10px;}	
+		.title{ line-height: 24px;}
+		.title span{ color: black; font: bold 20px "微软雅黑";padding-right: 10px;}
+		#recommend ul{ overflow: hidden; margin-top: 10px;}
+		#recommend ul li img{ width: 285px; height: 285px; cursor: pointer; }
+		#recommend ul li{width: 285px; float: left; overflow:hidden; padding-bottom: 10px;margin-right: 19px; position:relative}
+		#recommend ul li span{line-height: 40px;}
+		#recommend ul li .redPrice{ float: left; font: bold 16px "微软雅黑"; color: #666666; line-height: 34px;}
+		#recommend ul li .redNum{ float: right;color: #666666;}
+		#recommend ul li p{ font: 16px/30px "微软雅黑"; float: left;color: #666666; cursor: pointer;}
+		#recommend ul li div{ height: 41px; width: 55px; position: absolute;left: 15px ; top: 0; background: url(../img/icon_04.png) no-repeat;}
+		#red_ad { width: 1254px; height: 120px;}
+		#red_ad img{ cursor: pointer;}
+	/* 爆款推荐块*/
+	
+	#mainContenBox{ width: 1254px; margin-left: 10px; margin-top: 30px; background: #f5f5f5;}
+	#navbox{position: relative; height: 47px;}
+		#mainContenBox .mCB_nav{ height: 47px; overflow: hidden; width: 100%; background: white; z-index: 100;}
+		#mainContenBox .mCB_nav li{ float: left; margin-right: 2px;text-align: center; font: bold 14px/47px "宋体"; height: 47px;
+		color: #666666;width: 130px;}
+	
+	.birthGift,.newGift,.girlGift,.boyGift,.doubleGift{ width: 1254px;}
+	.birthGift .BGtitle,.newtitle,.girltitle,.boytitle,.doubletitle{ font: bold 24px/70px "微软雅黑"; color: black; margin-left: 10px; margin-top: 5px;}
+	.birthGift ul,.newGift ul,.girlGift ul,.boyGift ul,.doubleGift ul{ overflow: hidden;}
+	.birthGift li,.newGift li,.girlGift li,.boyGift li,.doubleGift li{ margin-right: 25px; float: left; height: 370px; margin-bottom: 20px; background: white; overflow: hidden;
+	position: relative; box-shadow: 1px 1px 0 0 rgba(244,233,233,1);}
+	.birthGift img,.newGift img,.girlGift img,.boyGift img,.doubleGift img{ width: 280px; height: 280px; display: block; cursor: pointer;}
+	
+	.birthGift  span,.newGift span,.girlGift span,.boyGift span,.doubleGift span{ float: left; margin-left: 10px;line-height: 30px; margin-top: 15px; font-size: 16px;}
+	.birthGift i,.newGift i,.girlGift i,.boyGift i,.doubleGift i { float: right; margin-right: 10px; line-height: 30px; margin-top: 15px;}
+	.birthGift ul p,.newGift ul p,.girlGift ul p,.boyGift ul p,.doubleGift ul p{ margin-left: 10px; width:260px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+	line-height: 30px; display: block; position: absolute; bottom: 20px;}
+	.birthGift ul li div,.newGift ul li div,.girlGift ul li div,.boyGift ul li div,.doubleGift ul li div{ position: absolute;left: 10px; top: 0; overflow: hidden;}
+	.birthGift ul li div img,.newGift ul li div img,.girlGift ul li div img,.boyGift ul li div img,.doubleGift ul li div img{ width: 55px; height: 44px;float: left;
+	 border: none; cursor:default;}
+	 .birthGift ul li s,.newGift ul li s,.girlGift ul li s,.boyGift ul li s,.doubleGift ul li s{ position: absolute; left: 10px; margin-top: 5px;}
+	
+	#sideNav{ width: 40px; height: 270px; position: fixed;bottom: 20px; right: 12px; z-index: 100;}
+	#sideNav li{ width: 38px; height: 33px; margin-top: 10px; border: 1px solid #CCCCCC;text-align: center; 
+	color: #666666; padding-top: 5px; cursor: pointer; background: #eeeeee;}
+	#sideNav .wenwo{ height: 65px; margin-top: 0;}
+	#sideNav .wenwo p{ width: 31px; height: 31px; margin: 0 auto; background: url(../img/wenwo.png) no-repeat;}	
+	#sideNav .backTop{ background: url(../img/online.png) no-repeat; display: none; padding-top: 0; height: 38px;}
+	#sideNav .backTop p{ background: #666666; color:#FFFFFF; display: none; width: 38px; height: 33px;
+	padding-top: 5px;}
+	#sideNav .APP img{ position: fixed;bottom: 18px; right: 70px; display: none;}
+	
+	#bigBox{ position: absolute; width: 100%;height: 7200px; background: rgba(0,0,0,0.6); top: 0; left: 0; display: none;}
